@@ -26,7 +26,7 @@ import './SearchBar.css';
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
             let sortByOptionValue = this.sortByOptions[sortByOption];
-            return <li key={sortByOptionValue}>sortByOptionValue</li>
+            return <li className={this.getSortByClass(sortByOptionValue)} key={sortByOptionValue}>sortByOptionValue</li>
         });
     }
 
