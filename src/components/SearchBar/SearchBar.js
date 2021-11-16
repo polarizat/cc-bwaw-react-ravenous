@@ -23,6 +23,12 @@ import './SearchBar.css';
     handleSortByChange(sortByOption) {
         this.setState({sortBy: sortByOption});
     }
+    handleTermChange(event) {
+        this.setState({'term': event.target.value});
+    }
+    handleLocationChange(event){
+        this.setState({'location': event.target.value});
+    }
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
             let sortByOptionValue = this.sortByOptions[sortByOption];
