@@ -12,8 +12,7 @@ const business = {
     rating: 4.5,
     reviewCount: 90
 }
-
-export class Business extends React.Component {
+class Business extends React.Component {
     render() {
         return (
             <div className="Business">
@@ -37,3 +36,5 @@ export class Business extends React.Component {
         );
     }
 }
+
+export { Business };
