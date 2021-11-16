@@ -16,6 +16,8 @@ import './SearchBar.css';
             'Highest Rated': 'rating',
             'Most Reviewed': 'review_count'
         };
+        this.handleTermChange = this.handleTermChange.bind(this);
+        this.handleLocationChange = this.handleLocationChange(this);
     }
     getSortByClass(sortByOption) {
         return (this.state.sortBy === sortByOption) ? 'active' : '';
